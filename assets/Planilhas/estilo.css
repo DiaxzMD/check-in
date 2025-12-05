@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #d8801d; /* Cor primária (azul claro) */
+    --secondary-color: #e8eaed; /* Cor secundária (cinza claro) */
+    --tertiary-color: #9aa0a6; /* Cor terciária (cinza médio) */
+    --bg-color: #202124; /* Cor de fundo (cinza escuro) */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-family: "Krona One", sans-serif;
+}
+
+.conteiner{
+    padding-bottom: 25px;
+    width: 100%;
+    margin: 10px auto;
+    justify-content: center;
+}
+
+.planilhas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.documentos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.pdf{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+
+h1{
+    text-align: center;
+    color: var(--primary-color)
+}
+
+h2{
+    color: var(--primary-color);
+    padding-bottom: 10px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.bi::before, [class*=" bi-"]::before, [class^=bi-]::before{
+    font-size: 80px;
+    margin: 15px;
+}
+
+i.bi.bi-file-earmark-spreadsheet-fill::before{
+  color: rgb(9, 187, 24);
+}
+
+i.bi.bi-file-pdf-fill::before{
+    color: rgb(212, 0, 0);
+}
+
+i.bi.bi-file-earmark-word-fill{
+    color: rgb(155, 155, 247);
+}
+a{
+    text-decoration: none;
+}
+
+.card{
+    color: rgb(254, 254, 254);
+}
+
+.cards{
+  width: 300px;
+  height: 280px;
+  background: #505050;
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  display: flex;
+}
+
+button{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    width: 180px;
+    font-size: 25px;
+    background-color: rgba(0, 217, 255, 0.955);
+    color: rgb(70, 57, 57);
+    border-radius: 15px;
+    padding: 10px;
+    position:relative;
+    top: 100px;
+    margin: 0 auto;
+    align-items: center;
+
+}
+
+button:hover{
+    background-color: rgba(4, 93, 109, 0.955);
+}
+
+span{
+    font-weight: bold;
+}
+
+
+/*Responsivo*/
+
+/* === RESPONSIVIDADE === */
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+  .conteiner {
+    width: 95%;
+  }
+
+  .cards {
+    width: 250px;
+    height: 260px;
+  }
+
+  button {
+    width: 160px;
+    font-size: 20px;
+    top: 80px;
+  }
+
+  .bi::before {
+    font-size: 70px;
+  }
+}
+
+/* Celulares médios (até 768px) */
+@media (max-width: 768px) {
+  .planilhas,
+  .documentos,
+  .pdf {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards {
+    width: 85%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  button {
+    width: 100%;
+    font-size: 18px;
+    top: 40px;
+  }
+
+  .bi::before {
+    font-size: 60px;
+  }
+
+  h1 {
+    font-size: 22px;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+  .conteiner {
+    padding: 10px;
+  }
+
+  .cards {
+    width: 90%;
+    margin: 10px 0;
+    height: 180px;
+    padding: 20px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 16px;
+    top: 20px;
+  }
+
+  .bi::before {
+    font-size: 50px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+}

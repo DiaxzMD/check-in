@@ -1,0 +1,41 @@
+
+nav li{ 
+    display: inline-block;
+    list-style: none;
+
+}
+
+nav li a {
+    display: inline-block;
+    color: whitesmoke;
+    text-decoration: none;   
+    padding: 10px 105px;
+    transition: 0.5s;
+}
+
+nav li a:hover {
+    color: var(--primary-color);
+}
+
+.dropdown-menu{
+    position: absolute;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    display: none;
+    background-color: rgb(126, 126, 126)
+}
+
+.dropdown-menu a {
+    display: block;
+    color : whitesmoke;
+
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: center
+}
